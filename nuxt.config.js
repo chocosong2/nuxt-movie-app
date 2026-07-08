@@ -71,5 +71,9 @@ export default {
   },
   serverMiddleware : [
     {path: '/api/movie', handler : '~/server-middleware/movie.js'}
-  ]
+  ],
+  server: {
+    host: '0.0.0.0',
+    port: process.env.PORT || 3000
+  }
 }
